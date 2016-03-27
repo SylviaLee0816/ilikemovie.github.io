@@ -1,0 +1,275 @@
+/**
+ * 首页样式
+ */
+
+body {
+    background: url(../images/index/bg.png) repeat;
+}
+
+
+
+.container {
+    position: relative;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0;
+    min-width: 1000px;
+    overflow: hidden;
+}
+
+#carousel-example-generic img{
+    vertical-align: middle;
+    width:1300px; 
+    height:550px;
+}
+
+/* 顶部
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.topheader {
+    background-color: #000000;
+    border: #071833 solid 1px;
+    height: 50px;
+    position: fixed;
+    width: 100%;
+    z-index: 100;
+    top: 0px;
+}
+
+.topheader a {
+    float: left;
+    line-height: 50px;
+    color: #FFFFFF;
+    font-size: 14px;
+    cursor: pointer;
+}
+
+.topheader .moile {
+    float: left;
+    background: url(../images/index/mobile.png) no-repeat left center;
+}
+
+.topheader .portals {
+    float: left;
+    background: url(../images/index/portals.png) no-repeat left center;
+}
+
+.topheader .service {
+    float: left;
+    background: url(../images/index/service.png) no-repeat left center;
+}
+
+.topheader .moile a {
+    padding-left: 16px;
+}
+
+.topheader .portals a,
+.topheader .service a {
+    padding-left: 18px;
+}
+
+.topheader span {
+    float: left;
+    margin: 0 10px;
+    color: #666666;
+    line-height: 50px;
+}
+
+/* 搜索
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+.search{
+    width:100%;
+    height:150px;
+    position: relative;
+}
+
+.search input{
+    width: 500px;
+    height:40px;
+    background-color: #fff;
+    color: #666;
+    border:1px solid;
+    border-radius: 10px;
+
+    position: absolute;
+    top:50%;
+    left: 30%;
+
+    font-size: 18px;
+    padding: 0 10px;
+    outline: none;
+}
+.search button{
+    width: 100px;
+    height:40px;
+    background-color: #fff;
+    color: #000;
+    border:1px solid;
+    border-radius: 10px;
+    
+    position: absolute;
+    top:50%;
+    left: 70%;
+
+    font-size: 20px;
+    font-weight: bold;
+}
+
+
+/* 主体
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+#main {
+    position: absolute;
+    overflow: hidden;
+    left: 0px;
+    right: 0px;
+    bottom: 0px;
+    top: 750px;
+    min-height: 900px;
+}
+
+#main .container {
+    background-color: #FFFFFF;
+    height: 100%;
+}
+
+#mainContainer .mainLeft {
+    position: absolute;
+}
+
+
+#mainContainer .tab {
+    position: absolute;
+    top: 0;
+    bottom: 0px;
+    background-color: #fff;
+    width: 100%;
+}
+
+#mainContainer .tab.active {
+    display: block;
+}
+
+
+
+#resource{
+    width: 220px;
+    height: 300px;
+    text-align: center;
+}
+
+#resource figure{
+    
+    display: inline-block;  
+    position: relative;
+    margin: 10px;
+    width: 220px;
+    padding:4px;
+    border-radius: 4px;
+    border:1px solid #ddd;
+    text-align: center;
+    
+}
+#resource figure img{
+    vertical-align: middle;
+    width:200px; 
+    height:280px;
+}
+#resource figure a{
+    color:#777;
+    line-height: 1.5;
+    font-size: 14px;
+    padding: 7px 0 5px 0;
+}
+
+#resource .title{
+    color:#333;
+    font-weight: normal;
+}
+
+#resource .price{
+    color: #f66;
+    font-size: 16px;
+    letter-spacing: 1px;
+}
+
+#resource .grade{
+    fcolor: #999;
+    font-size: 18px;
+    letter-spacing: 1px;
+}
+
+.apps {
+    float: left;
+    width: 100%;
+}
+
+.apps ul {
+    width: 100%;
+}
+
+.apps li {
+    float: left;
+    width: 160px;
+    height: 160px;
+    margin: 20px;
+    display: inline;
+}
+
+.apps li a {
+    width: 150px;
+    height: 180px;
+    display: block;
+    border: #DCDCDC solid 1px;
+    text-align: center;
+    cursor: pointer;
+}
+
+.apps li img {
+    width: 100px;
+    height: 130px;
+    margin-top: 10px;
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+.apps li a {
+    line-height: 30px;
+    font-size: 14px;
+    color: #707070;
+}
+
+/* Larger than mobile */
+
+@media (min-width: 400px) {
+    .container {
+        width: 98%;
+    }
+}
+
+
+/* Larger than phablet (also point when grid becomes active) */
+
+@media (min-width: 550px) {
+    .container {
+        width: 90%;
+    }
+}
+
+
+/* Larger than tablet */
+
+@media (min-width: 750px) {}
+
+
+/* Larger than desktop */
+
+@media (min-width: 1000px) {}
+
+
+/* Larger than Desktop HD */
+
+@media (min-width: 1200px) {
+    .container {
+        width: 80%;
+    }
+}
